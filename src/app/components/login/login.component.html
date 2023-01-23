@@ -1,0 +1,15 @@
+<div class="container">
+    <mat-card>
+        <mat-toolbar color="primary">Login Page</mat-toolbar>
+        <form [formGroup]="userform">
+            <mat-form-field>
+            <input matInput id="Login" class="userName" name="usuario" placeholder="Usuario">
+            </mat-form-field>
+            <mat-form-field>
+            <input matInput id="Password" class="Password" name="senha" placeholder="Senha" type="password">
+            </mat-form-field>
+            <br>
+            <button mat-raised-bdutton type="submit" (click)="Auth()">Login</button>
+        </form>
+    </mat-card>
+</div>
